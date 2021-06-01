@@ -6,24 +6,24 @@ def start_adventure():
     print("You do not remember where you are or how you got here. amd there is a weird sense of urgancy to the situation, specically regrading the doors going into the hill.")
     print("")
     print("Having no idea where you are or why you are here, there are few options for what to do. You can either (1) investiage the platform or (2) investigate the surrounding area")
-    platform_or_area = input("> ")
-    if "1" in platform_or_area:
+    platform_or_area = float(input("> "))
+    if platform_or_area == 1:
         #platform stuff
-        print("you mom")
-    elif "2" in platform_or_area:
+        print("platform")
+    elif platform_or_area == 2:
         #surroding area stuff
-        print("you mom")
+        print("area")
     else:
         print("Sorry, you can only answer 1 or 2")
         while True:
-            platform_or_area = input("> ")
-            if "1" in platform_or_area:
+            platform_or_area = float(input("> "))
+            if platform_or_area == 1:
                  #platform stuff
-                 print("you mom")
+                 print("platform1")
                  break
-            elif "2" in platform_or_area:
+            elif platform_or_area == 2:
                  #surroding area stuff
-                 print("you mom")
+                 print("area1")
                  break
             else:
                 print("Come again?")
