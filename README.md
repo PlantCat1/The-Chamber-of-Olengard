@@ -1,6 +1,5 @@
 # The Chamber of Olengard
-just run main.py play it
-<br/>
+<p>just run main.py play it</p>
 shit to do:
 make the rest of the game<br/>
 uhhhhhh fix shit<br/>
