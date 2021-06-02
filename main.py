@@ -1,42 +1,69 @@
 from text import *
 
+def door():
+    print("door")
+
+def surrounding_area():
+    print("")
+    print(text3)
+
+def surrounding_area_platform_first():
+    print("")
+    print(text4)
+
+def platform():
+    print("")
+    print(text2)
+    print("")
+    print("\033[1m" + "This doesn't provide any answers to your quetions and decide you should either (1) investigate the door or (2) investigate the surronding area." + "\033[0m")
+    door_or_area = input("> ")
+    if door_or_area == "1":
+        door()
+    elif door_or_area == "2":
+        surrounding_area_platform_first()
+    else:
+        print("Sorry, you can only answer 1 or 2")
+        while True:
+            door_or_area = input("> ")
+            if door_or_area == "1":
+                 door()
+                 break
+            elif door_or_area == "2":
+                 surrounding_area_platform_first()
+                 break
+            else:
+                print("Come again?")
+
 def start_adventure():
     print("")
     print(text1)
     print("")
-    print("Having no idea where you are or why you are here, there are few options for what to do. You can either (1) investiage the platform or (2) investigate the surrounding area")
+    print("\033[1m" + "Having no idea where you are or why you are here, there are few options for what to do. You can either (1) investigate the platform or (2) investigate the surrounding area" + "\033[0m")
     platform_or_area = input("> ")
     if platform_or_area == "1":
-        print("")
-        print(text2)
-        print("")
+        platform()
     elif platform_or_area == "2":
-        #print("")
-        #print("text3")
-        print("")
+        surrounding_area()
     else:
         print("Sorry, you can only answer 1 or 2")
         while True:
             platform_or_area = input("> ")
             if platform_or_area == "1":
-                 print("")
-                 print(text2)
-                 print("")
+                 platform()
                  break
             elif platform_or_area == "2":
-                 #print("")
-                 #print("text3")
-                 print("")
+                 surrounding_area
                  break
             else:
                 print("Come again?")
 
 def intro():
-    print("Hello traveler. Before you may begin on your journy, I must first know your name.")
+    print("")
+    print("\033[1m" + "Hello traveler. Before you may begin on your journy, I must first know your name." + "\033[0m")
     player_name = input("> ")
     print("I see, " + player_name + ".")
     print("")
-    print("One last question before the adventure begins... Are you more of a (1) bow and arrow or (2) a sword type?")
+    print("\033[1m" + "One more question before the adventure begins... Are you more of a (1) bow and arrow or (2) a sword type?" + "\033[0m")
     player_weapon = input("> ")
     if player_weapon == "2":
         player_weapon = True
