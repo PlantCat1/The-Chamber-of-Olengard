@@ -6,11 +6,11 @@ def start_adventure():
     print("")
     print("Having no idea where you are or why you are here, there are few options for what to do. You can either (1) investiage the platform or (2) investigate the surrounding area")
     platform_or_area = input("> ")
-    if platform_or_area >= "1" and platform_or_area <= "1":
+    if platform_or_area == "1":
         print("")
         print(text2)
         print("")
-    elif platform_or_area >= "2" and platform_or_area <= "2":
+    elif platform_or_area == "2":
         #print("")
         #print("text3")
         print("")
@@ -18,12 +18,12 @@ def start_adventure():
         print("Sorry, you can only answer 1 or 2")
         while True:
             platform_or_area = input("> ")
-            if platform_or_area >= "1" and platform_or_area <= "1":
+            if platform_or_area == "1":
                  print("")
                  print(text2)
                  print("")
                  break
-            elif platform_or_area >= "2" and platform_or_area <= "2":
+            elif platform_or_area == "2":
                  #print("")
                  #print("text3")
                  print("")
@@ -38,18 +38,18 @@ def intro():
     print("")
     print("One last question before the adventure begins... Are you more of a (1) bow and arrow or (2) a sword type?")
     player_weapon = input("> ")
-    if player_weapon >= "2" and player_weapon <= "2":
+    if player_weapon == "2":
         player_weapon = True
-    elif player_weapon >= "1" and player_weapon <= "1":
+    elif player_weapon == "1":
         player_weapon = False
     else:
         print("Sorry, I do not understand this. Please try again.")
         while True:
             player_weapon = input("> ")
-            if player_weapon >= "2" and player_weapon <= "2":
+            if player_weapon == "2":
                  player_weapon = True
                  break
-            if player_weapon >= "2" and player_weapon <= "2":
+            if player_weapon == "1":
                  player_weapon = False
                  break
             else:
