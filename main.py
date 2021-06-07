@@ -1,15 +1,45 @@
 from text import *
 
+def run():
+    print("run")
+
+def stay():
+    print("stay")
+
 def door():
-    print("door")
+    print("")
+    print(text5)
+    print("")
+    print("\033[1m" + "Do you (1) get the hell out of them or (2) go further into the room" + "\033[0m")
+    run_or_stay = input("> ")
+    if run_or_stay == "1":
+        run()
+    elif run_or_stay == "2":
+        stay()
+    else:
+        print("Sorry, you can only answer 1 or 2")
+        while True:
+            run_or_stay = input("> ")
+            if run_or_stay == "1":
+                 run()
+                 break
+            elif run_or_stay == "2":
+                 stay()
+                 break
+            else:
+                print("Come again?")
+    
 
 def surrounding_area():
     print("")
     print(text3)
+    platform()
 
 def surrounding_area_platform_first():
     print("")
     print(text4)
+    door()
+
 
 def platform():
     print("")
