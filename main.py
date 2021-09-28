@@ -1,21 +1,75 @@
 from text import *
 
+def stairs():
+    print("")
+    print(text8)
+    print("")
+    print("\033[1m" + "Do you (1) investigate the chest (2) investigate the guard (3) go past both and move to the next room" + "\033[0m")
+    area3 = input(" >")
+    if area3 == "1":
+        print("chest")
+    elif area3 == "2":
+        print("guard")
+    elif area3 == "3":
+        print("next room")
+    else:
+        print("Sorry, you can only answer 1, 2 or 3")
+        while True:
+            area3 = input("> ")
+            if area3 == "1":
+                print("chest")
+                break
+            elif area3 == "2":
+                print("guard")
+                break
+            elif area3 == "3":
+                print("next room")
+                break
+            else:
+                print("Come again?")
+    
 def run():
-    print("run")
-
-def stay():
-    print("stay")
+    print("")
+    print(text6)
+    print("")
+    print("\033[1m" + "Do you (1) Try to find a way to get the door open or (2) Venture further into the abyss adhead" + "\033[0m")
+    dooropen_or_furter = input("> ")
+    if dooropen_or_furter == "1":
+        print("")
+        print(text9)
+        stairs()
+    elif dooropen_or_furter == "2":
+        print("")
+        print("You decide there is nothing for you to do about the door and the only option is to move forward")
+        stairs()
+    else:
+        print("Sorry, you can only answer 1 or 2")
+        while True:
+            dooropen_or_furter = input("> ")
+            if dooropen_or_furter == "1":
+                 print("")
+                 print(text9)
+                 stairs()
+                 break
+            elif dooropen_or_furter == "2":
+                 print("")
+                 print("You decide there is nothing for you to do about the door and the only option is to move forward")
+                 stairs()
+            else:
+                print("Come again?")
 
 def door():
     print("")
     print(text5)
     print("")
-    print("\033[1m" + "Do you (1) get the hell out of them or (2) go further into the room" + "\033[0m")
+    print("\033[1m" + "Do you (1) get the hell out of there or (2) go further into the room" + "\033[0m")
     run_or_stay = input("> ")
     if run_or_stay == "1":
         run()
     elif run_or_stay == "2":
-        stay()
+        print("")
+        print(text7)
+        stairs()
     else:
         print("Sorry, you can only answer 1 or 2")
         while True:
