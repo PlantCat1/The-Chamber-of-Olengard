@@ -26,3 +26,23 @@ Right away a deep, musty smell invades your ears. You immediately realize just h
 material while the floor is of stone, which is unsurprisingly cracked all along. The eerie feeling, also unsurprisingly, has gotten magnitudes worse but you
 also know that you have to be here for a reason and are tempted to venture further into the unknown.
 """
+
+text6 = """You turn back out of the room but before you can exit the door swiftly shut with an echoing slam. There is a handle you use to try to move it open but
+it does not barge. You then grab the torch attached to the scone to your right and descend down the stariway.
+"""
+text7 = """You grab the torch attached to the sconce to your side. Right after the doors swiftly shut closed with an echoing slam blaring into your ears.
+You try to pull open the doors to no avail. The thought quickly dawns upon you that you’re stuck in this… place and there is nothing you can do about it but venture
+forth down the stairs.
+"""
+text8 = """after only a few steps, you can just about see that the stairs end to another straight corridor. Once at the bottom you assess your surroundings
+and notice the walls and ceiling are stone now, just like the floor. You creep forward, each step quietly echoing throughout the room,
+which seems to be more like a full on dungeon rather than a room to some weird abandoned structure. After what felt like much longer than it really was,
+You see that the path abruptly ends at a stone door. You open up the old door with a deep rumble of stone pushing against stone. Inside is a square room lit with
+multiple torches along the walls, which look the same as the walls in the area previous . Directly to the other side is an open area that would be where a door is,
+but is not. To the right is a worn, wood chest with a shiny gold lock and leather wrapping the outside. But then you notice a chair with a small goblin sleeping on top of it.
+It must be a heavy sleeper given that it wasn’t awakened by the sounds of the door or anything else, but there is something to be done here.
+"""
+
+text9 = """You use the light of the nearby torch and look all around the sides of the doors, but to no effect. The small hole of light of what used to be the
+doorknob also has nothing of interest. You quickly realize you're stuck in this cold, musty dungeon, and the only thing to do now is to go down the stairs and see what it's all about.
+"""
