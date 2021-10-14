@@ -1,6 +1,12 @@
 from text import *
 #def room4()
 
+def guard():
+    print("")
+    print("text13")
+    print("")
+    print("\033[1m" + "Do you (1) Wake him up and try to find out where you are or (2) attack him" + "\033[0m")
+
 def chest():
     print("")
     print(text10)
@@ -8,11 +14,12 @@ def chest():
     print("\033[1m" + "Do you (1) open the chest or (2) leave it" + "\033[0m")
     chest_or_not = input("> ")
     if chest_or_not == "1":
-        print("chest open")
         if player_weapon_type == True:
             print(text12)
+            inventory.append("Shortsword")
         else:
             print(text11)
+            inventory.append("Bow and Arrows")
     elif chest_or_not == "2":
         print("leave it")
     else:
@@ -20,8 +27,13 @@ def chest():
         while True:
             chest_or_not = input("> ")
             if chest_or_not == "1":
-                 print("chest open")
-                 break
+                if player_weapon_type == True:
+                    print(text12)
+                    inventory.append("Shortsword")
+                else:
+                    print(text11)
+                    inventory.append("Bow and Arrows")
+                break
             elif chest_or_not == "2":
                  print("leave it")
                  break
@@ -35,7 +47,6 @@ def stairs():
     print("\033[1m" + "Do you (1) investigate the chest (2) investigate the guard (3) go past both and move to the next room" + "\033[0m")
     area3 = input(">")
     if area3 == "1":
-        print("chest")
         chest()
     elif area3 == "2":
         print("guard")
@@ -48,8 +59,7 @@ def stairs():
         while True:
             area3 = input("> ")
             if area3 == "1":
-                print("chest")
-                #chest()
+                chest()
                 break
             elif area3 == "2":
                 print("guard")
@@ -112,8 +122,9 @@ def door():
                  run()
                  break
             elif run_or_stay == "2":
-                 stay()
-                 break
+                 print("")
+                 print(text7)
+                 stairs()
             else:
                 print("Come again?")
     
@@ -182,6 +193,7 @@ def intro():
     print("I see, " + player_name + ".")
     print("")
     print("\033[1m" + "One more question before the adventure begins... Are you more of a (1) sword or (2) bow and arrow type?" + "\033[0m")
+    global player_weapon_type
     player_weapon_type = input("> ")
     if player_weapon_type == "1":
         player_weapon_type = True
@@ -205,4 +217,5 @@ def intro():
         print("Ah I see... I thought you would pick the bow")
     start_adventure()
 
+inventory = []
 intro()

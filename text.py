@@ -57,3 +57,6 @@ There doesn't appear to be any traps set up and is just a normal chest"""
 text12 = """You take another look at the chest, and then back at the guard and decide to open it up and see what’s inside. You slide up the top of the chest,
 and see a shortsword and nothing else. The weapon looks pretty average, but it seems to be made recently and is probably used by the guard.
 There doesn't appear to be any traps set up and is just a normal chest"""
+
+text13 = """You decide to take care of the guard first in one way or another. You slowly walk up to him but stop around half way there, realizing you have no idea
+what you want to do. Upon further inspection the goblin has nothing of interest on him and does not look particularly strong. He is still fast asleep but he may not be that way forever"""
