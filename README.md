@@ -1,13 +1,12 @@
 # The Chamber of Olengard
-<p>just run main.py play it</p>
-<strong>shit to do:</strong><br/>
-<ul>
-<li>finish rooms</li>
-  <li>2<\li>
-  <li>3</li>
-  <li>4</li>
-  <li>5</li>
-  <li>6</li>
+just run main.py play it
+**shit to do:**
+- [x] area 1
+- [x] area 2
+- [ ] area 3
+- [ ] area 4
+- [ ] area 5
+- [ ] area 6
 <li>uhhhhhh fix shit</li>
 <li>uhhhhhhhhhhhhhhhhhhhhhhhh</li>
 </ul>
