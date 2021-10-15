@@ -1,4 +1,4 @@
-# The Chamber of Olengard
+# The Chamber of Olengard\
 just run main.py play it
 **shit to do:**
 - [x] area 1
