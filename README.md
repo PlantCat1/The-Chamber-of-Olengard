@@ -1,5 +1,5 @@
-# The Chamber of Olengard\
-just run main.py play it
+# The Chamber of Olengard
+just run main.py play it\
 **shit to do:**
 - [x] area 1
 - [x] area 2
