@@ -164,6 +164,7 @@ def platform():
                 print("Come again?")
 
 def start_adventure():
+    print(inventory)
     print("")
     print(text1)
     print("")
@@ -197,17 +198,21 @@ def intro():
     player_weapon_type = input("> ")
     if player_weapon_type == "1":
         player_weapon_type = True
+        inventory.append("sword")
     elif player_weapon_type == "2":
         player_weapon_type = False
+        inventory.append("bow")
     else:
         print("Sorry, I do not understand this. Please try again.")
         while True:
             player_weapon_type = input("> ")
-            if player_weapon_type == "2":
-                 player_weapon_type = True
-                 break
             if player_weapon_type == "1":
+                 player_weapon_type = True
+                 inventory.append("sword")
+                 break
+            if player_weapon_type == "2":
                  player_weapon_type = False
+                 inventory.append("bow")
                  break
             else:
                 print("Come again?")
