@@ -164,7 +164,6 @@ def platform():
                 print("Come again?")
 
 def start_adventure():
-    print(inventory)
     print("")
     print(text1)
     print("")
